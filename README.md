@@ -1,8 +1,7 @@
 Pentru ex 3:
 Codul este de tip consola in care un utilizator
 isi poate gestiona notitele (le poate crea, vedea, deschide dupa ID si sterge).
-Practic, am pornit de la ideea de a separa responsabilitatile:
-am o clasa `Note` care reprezinta o notita (cu un id generat automat din UUID,
+Am o clasa `Note` care reprezinta o notita (cu un id generat automat din UUID,
 autorul, continutul si data/ora la care a fost creata), apoi am definit o interfata `NoteRepository`
 unde am pus operatiile de baza (save, getAll, delete, getById), ca sa pot schimba usor modul de
 stocare daca vreau pe viitor. Apoi folosesc `FileNoteRepository`, care salveaza
